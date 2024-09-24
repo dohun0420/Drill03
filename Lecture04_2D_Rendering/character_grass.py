@@ -12,14 +12,20 @@ def draw_boy(x, y):
     delay(0.01)
     
 def run_top():
-    for x in range(0, 800, 10):
+    for x in range(0, 750, 10):
         draw_boy(x, 550)
 
 def run_right():
-    pass
+    for y in range(0, 550, 10):
+        draw_boy(750, 550 -y)
+
 def run_bottom():
+    for x in range(0, 750, 10):
+        draw_boy(750 - x, 0)
     pass
 def run_left():
+    for y in range(0, 550, 10):
+        draw_boy(0, y)
     pass
 
 def run_rectangle():
