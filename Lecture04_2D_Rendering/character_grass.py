@@ -22,32 +22,43 @@ def run_right():
 def run_bottom():
     for x in range(0, 750, 10):
         draw_boy(750 - x, 0)
-    pass
+        
 def run_left():
     for y in range(0, 550, 10):
         draw_boy(0, y)
+
+def run_tri_bot():
+    for x in range (0, 750, 10):
+        draw_boy(x, 0)
+        
+def run_tri_right():
+    pass
+            
+def run_tri_left():
     pass
 
 def run_rectangle():
-    print('RECTANGLE')
     run_top()
     run_right()
     run_bottom()
     run_left()
-    pass
 
 def run_circle():
-    print('CIRCLE')
-
     r, cx, cy = 300, 800 // 2, 600 // 2
     for d in range(0, 360):
         x = r * math.cos(math.radians(d)) + cx
         y = r * math.sin(math.radians(d)) + cy
         draw_boy(x, y)
 
+def run_triangle():
+    run_tri_bot()
+    run_tri_right()
+    run_tri_left()
+
 while True:
     run_rectangle()
     run_circle()
+    run_triangle()
     break
     
 
