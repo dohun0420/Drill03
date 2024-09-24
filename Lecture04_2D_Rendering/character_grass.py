@@ -32,10 +32,16 @@ def run_tri_bot():
         draw_boy(x, 0)
         
 def run_tri_right():
-    pass
+    for a in range(0, 600, 10):
+        x = 800 - 2/3 * a
+        y = a
+        draw_boy(x, y)
             
 def run_tri_left():
-    pass
+    for b in range(0, 600, 10):
+        x = 400 - 2/3 * b
+        y = 600 - b
+        draw_boy(x, y)
 
 def run_rectangle():
     run_top()
@@ -59,7 +65,7 @@ while True:
     run_rectangle()
     run_circle()
     run_triangle()
-    break
+
     
 
 close_canvas()
