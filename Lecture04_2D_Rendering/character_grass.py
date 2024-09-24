@@ -35,10 +35,9 @@ def run_circle():
         boy.draw_now(x, y)
         delay(0.01)
 
-
 while True:
     run_rectangle()
-    run_circle()
+    # run_circle()
     break
     
 
